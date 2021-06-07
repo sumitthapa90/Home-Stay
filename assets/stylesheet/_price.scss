@@ -1,0 +1,46 @@
+h2 {
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: 1.8rem;
+  font-family: "Caveat", cursive;
+  margin-top: 2rem;
+}
+.inclusion-flex {
+  &:hover {
+    opacity: 0.5;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+  .inclusion {
+    li {
+      font-family: "Caveat", cursive;
+      font-size: 1.7rem;
+    }
+  }
+  .image-inclusion {
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+.pricing {
+  &:hover {
+    opacity: 0.5;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    transform: rotate(360deg) scale(1) translate(40px) skew(40deg);
+    transition: all 2s ease-in-out;
+  }
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+
+  p {
+    padding-top: 2rem;
+  }
+  span {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
