@@ -62,7 +62,7 @@ header {
   border: 2px solid white;
   img {
     border-radius: 10px;
-    height: 400px;
+    width: 100%;
   }
 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -136,6 +136,7 @@ h2 {
   }
   margin-top: 2rem;
   .image-box {
+    width: 100%;
     transform: rotate(360deg);
     border: 2px solid white;
     border-radius: 10px;
@@ -159,7 +160,19 @@ h2 {
   }
 }
 .map {
+  margin: 0 auto;
+  max-width: 80%;
+
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
   iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
@@ -188,7 +201,7 @@ h2 {
     background-color: rgb(230, 227, 227);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: 300px;
+    // width: 300px;
     padding: 1rem;
     border-radius: 10px;
   }
@@ -244,5 +257,3 @@ footer {
     font-weight: 600;
   }
 }
-
-

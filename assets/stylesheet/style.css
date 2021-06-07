@@ -212,7 +212,7 @@ header i {
 
 .hero-image img {
   border-radius: 10px;
-  height: 400px;
+  width: 100%;
 }
 
 h1 {
@@ -290,6 +290,7 @@ h2 {
 }
 
 .gallery .image-box {
+  width: 100%;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   border: 2px solid white;
@@ -316,11 +317,22 @@ h2 {
 }
 
 .map {
+  margin: 0 auto;
+  max-width: 80%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
   margin-top: 4rem;
   text-align: center;
 }
 
 .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -350,7 +362,6 @@ h2 {
   background-color: #e6e3e3;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  width: 300px;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -521,6 +532,7 @@ footer h6 {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .flex {
@@ -608,5 +620,49 @@ h4 {
 .pricing span {
   font-size: 3rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 652px) {
+  html {
+    font-size: 18px;
+  }
+  .nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
+  }
+  .gallery {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+  }
+  .testimonial {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+  .site-links {
+    margin-top: 2rem;
+  }
+  .tittle {
+    text-align: center;
+  }
+  span {
+    text-align: center;
+  }
+  .flex-sb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
